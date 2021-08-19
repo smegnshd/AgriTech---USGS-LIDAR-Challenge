@@ -4,7 +4,6 @@ This is simple python package called 'my_lidar' used to read, visualize lidar po
 Installation 
 
   pip install my_lidar
-Waterflow package provides a 
 
 
 Plane to work
