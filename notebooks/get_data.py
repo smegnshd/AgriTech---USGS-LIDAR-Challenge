@@ -6,5 +6,5 @@ Created on Wed Aug 18 20:51:57 2021
 """
 
 # read data 
-with open(pipeline.json, 'r') as read_file:
-    template = json.load(read_file)
+import pdal
+pdal pipeline iowa.json
