@@ -20,7 +20,7 @@ setup(
     description="Python package that contains an implementation for data fetching, loading, transforming, and visualization",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/smegnshd/AgriTech---USGS-LIDAR-Challenge",
+    url="https://github.com/smegnshd/AgriTech---USGS-LIDAR-Challenge/tree/main/my_project",
     packages=['my_lidar'],
     classifiers=[
         "Programming Language :: Python :: 3",

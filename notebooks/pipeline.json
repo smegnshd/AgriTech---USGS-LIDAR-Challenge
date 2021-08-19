@@ -1,25 +1,21 @@
 [
     {
-        "filename":"A.las",
-        "spatialreference":"EPSG:26916"
+        "bounds":" ",
+        "filename":" ",
+        "type":"readers.ept",
+        "tag":"readdata"
+        
     },
     {
+        "type":"filters.range",
+        "limits":"Classification![2:7],Classification![9:9]",
+        "tag":"nonnise"
+    },
+    {
+        "in_srs":"EPSG:3857"
+        "out_srs":"EPSG:26915",
         "type":"filters.reprojection",
-        "in_srs":"EPSG:26916",
-        "out_srs":"EPSG:4326",
-        "tag":"A2"
-    },
-    {
-        "filename":"B.las",
-        "tag":"B"
-    },
-    {
-        "type":"filters.merge",
-        "tag":"merged",
-        "inputs":[
-            "A2",
-            "B"
-        ]
+        "tag":"reprojectUTM"
     },
     {
         "type":"writers.gdal",
