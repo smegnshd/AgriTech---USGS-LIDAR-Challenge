@@ -3,7 +3,7 @@
         "pipeline": [
             {
     "bounds": "([-10425171.940, -10423171.940], [5164494.710, 5166494.710])",
-    "filename": "https://s3-us-west-2.amazonaws.com/usgs-lidar-public/IA_FullState/ept.json",
+    "filename": "https://s3-us-west-2.amazonaws.com/usgs-lidar-publicUSGS_LPC_CO_SoPlatteRiver_Lot1_2013_LAS_2015/ept.json'",
     "type": "readers.ept",
     "tag": "readdata"
             },
@@ -33,6 +33,18 @@
             },
             {
                 "filename": "iowa.laz",
+                "inputs": [ "classify" ],
+                "tag": "writerslas",
+                "type": "writers.las"
+            },
+            {
+                "filename": "iowa.las",
+                "inputs": [ "classify" ],
+                "tag": "writerslas",
+                "type": "writers.bpf"
+            },
+            {
+                "filename": "iowa.shp",
                 "inputs": [ "classify" ],
                 "tag": "writerslas",
                 "type": "writers.las"
